@@ -1,0 +1,31 @@
+{
+  "name": "basic-structure-with-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass assets/sass/app.scss -o dist/ --source-map true",
+    "dev": "rerun-script",
+    "lite": "lite-server",
+    "start": "concurrently \"npm run dev\"  \"npm run lite\""
+  },
+  "watches": {
+    "build-css": "assets/sass/**/**/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vfreitas-/basic-structure-with-sass.git"
+  },
+  "author": "Vitor Freitas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vfreitas-/basic-structure-with-sass/issues"
+  },
+  "homepage": "https://github.com/vfreitas-/basic-structure-with-sass#readme",
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.2",
+    "node-sass": "^3.8.0",
+    "rerun-script": "^0.6.0"
+  }
+}

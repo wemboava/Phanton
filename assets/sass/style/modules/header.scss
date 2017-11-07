@@ -1,0 +1,77 @@
+.hexagon {
+	top: 70px;
+	position: relative;
+  margin: 0 auto;
+    
+  transform: translateX(0%);
+  color: white;
+
+  animation: move 1.5s ease-out alternate forwards;
+}
+
+#Layer_1 {
+  animation: rotate 1.2s linear alternate forwards;
+}
+
+.header {
+  &__title {
+    margin-top: 3em;
+    font-size: 3em;
+    
+    padding: 0 2.5em;
+    max-width: 65em;
+  }
+}
+
+path {
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1;
+  
+  animation: borda 3s linear alternate 1 2s;
+}
+
+.diamond {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 8s linear alternate 1 1.4s forwards, brilho 3s 2.5s ease-out infinite;
+}
+
+//              keyframes
+//----------------------------------------------
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rotate {
+  0%   {transform: rotate(50deg) scale(.2, .2);}
+  25%  {transform: rotate(360deg) scale(.4, .4);}
+  50%  {transform: rotate(500deg) scale(.6, .6);}
+  75%  {transform: rotate(620deg) scale(.8, .8);}
+  100% {transform: rotate(720deg) scale(1.1, 1.1) translateX(calc(50% - 75px));}
+}
+
+@keyframes move {
+  to {transform: translateX(calc(50% - 75px));}
+}
+
+@keyframes brilho {
+  0% {
+    stroke-width: 1;
+  }
+  50% {
+    stroke-width: 1.5;
+  }
+  100% {
+    stroke-width: 1;
+  }
+}
+
+
+
+
