@@ -20,6 +20,9 @@ body {
   max-width: 65em;
   position: relative; }
 
+#menu-ico {
+  display: none; }
+
 .hexagon {
   top: 70px;
   position: relative;
@@ -82,10 +85,11 @@ path {
   background-color: #585858;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -500px;
   color: white;
   padding: 2.75em;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  transition: transform .7s ease; }
   .menu__title {
     font-weight: 900;
     letter-spacing: 5px;
@@ -93,5 +97,45 @@ path {
   .menu__list__item {
     padding: 1.7em 0;
     border-bottom: 1px solid rgba(161, 161, 161, 0.4); }
+
+#menu-ico:checked ~ .menu {
+  transform: translateX(calc(-500px)); }
+
+.a {
+  width: 50px; }
+
+.icon, .header__icon__first, .header__icon__second, .header__icon__third {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transition: transform 1s ease; }
+
+.header__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 10;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.075);
+  cursor: pointer; }
+  .header__icon__first {
+    margin-top: 10px; }
+  .header__icon__third {
+    margin-bottom: 10px; }
+
+#menu-ico:checked ~ .header .header__icon .header__icon__second {
+  transform: translateX(-450px) scale(0, 0); }
+
+#menu-ico:checked ~ .header .header__icon .header__icon__first {
+  transform: rotate(135deg) scale(1.4, 1.1) translate(6px, -7px); }
+
+#menu-ico:checked ~ .header .header__icon .header__icon__third {
+  transform: rotate(45deg) scale(1.4, 1.1) translate(-4px, -7px); }
 
 /*# sourceMappingURL=app.css.map */
