@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -13,12 +14,11 @@ a {
 
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  color: #585858; }
-
-.container {
+  color: #585858;
   margin: 0 auto;
   padding: 0 2.5em;
-  max-width: 65em; }
+  max-width: 65em;
+  position: relative; }
 
 .hexagon {
   top: 70px;
@@ -33,9 +33,7 @@ body {
 
 .header__title {
   margin-top: 3em;
-  font-size: 3em;
-  padding: 0 2.5em;
-  max-width: 65em; }
+  font-size: 3em; }
 
 path {
   fill: none;
@@ -77,5 +75,23 @@ path {
     stroke-width: 1.7; }
   100% {
     stroke-width: 1; } }
+
+.menu {
+  height: 100vh;
+  width: 500px;
+  background-color: #585858;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 2.75em;
+  font-size: 1.4em; }
+  .menu__title {
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 1em; }
+  .menu__list__item {
+    padding: 1.7em 0;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.4); }
 
 /*# sourceMappingURL=app.css.map */
