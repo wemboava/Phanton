@@ -9,7 +9,17 @@
     padding: 2.75em;
     font-size: 1.4em;   
     transition: transform .7s ease;
-    
+
+    @include mdscreen($screen-lg) {
+        width: 360px;
+        padding: 2em;
+    }
+
+    @include mdscreen($screen-sm) {
+        width: 260px;
+        padding: 1em;
+    }
+
     &__title {
         font-weight: 900;
         letter-spacing: 5px;
@@ -20,14 +30,59 @@
         
         &__item {
             padding: 1.7em 0;
+            transform: translateX(600px);
+
+            cursor: pointer;
             border-bottom: 1px solid rgba(161, 161, 161, 0.4);
+            
+            &:hover {
+                transition: .7s;
+                color: $color-default;
+            }
+
+            @include mdscreen($screen-lg) {
+                padding: 1em 0;
+                font-size: 0.9em;
+            }
+            
+            @include mdscreen($screen-sm) {
+                padding: 1em 0;
+                font-size: 0.8em;
+            }
         }
     }
 }
 
-#menu-ico:checked ~ .menu{
+#menu-ico:checked ~ .overlay .menu{
     transform: translateX(calc(-500px));
 }
+
+#menu-ico:checked ~ .overlay .menu .menu__list__item {
+    &:nth-child(1){
+        animation: delay-item .7s ease alternate 1 .2s forwards;
+    }
+     
+    &:nth-child(2){
+        animation: delay-item .7s ease alternate 1 .4s forwards;
+    }
+     
+    &:nth-child(3){
+        animation: delay-item .7s ease alternate 1 .6s forwards;
+    }
+     
+    &:nth-child(4){
+        animation: delay-item .7s ease alternate 1 .8s forwards;
+    }
+     
+    &:nth-child(5){
+        animation: delay-item .7s ease alternate 1 1s forwards;
+    }
+}
+
+@keyframes delay-item{
+    to {transform: translateX(0px);}
+}
+
 
 // @keyframes slider-menu {
 //     // from{transform: translateX(calc(500px));}

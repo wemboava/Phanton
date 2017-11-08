@@ -1,0 +1,3 @@
+@mixin mdscreen($size, $var: max-width) {
+    @media screen and (#{$var} : #{$size}) {@content;}
+}

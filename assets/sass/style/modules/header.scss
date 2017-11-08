@@ -1,5 +1,5 @@
 .hexagon {
-	top: 70px;
+  top: 70px;
 	position: relative;
   margin: 0 auto;
     
@@ -17,6 +17,14 @@
   &__title {
     margin-top: 3em;
     font-size: 3em;
+
+    @include mdscreen($screen-lg) {
+      font-size: 2.5em;
+    }
+  
+    @include mdscreen($screen-sm) {
+      font-size: 2em;
+    }
   }
 }
 
@@ -31,7 +39,7 @@ path {
 .diamond {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 8s linear alternate 1 1.4s forwards, brilho 3s 2.5s ease-out infinite;
+  animation: dash 8s linear alternate 1 1.4s forwards, brilho 1s 2.5s linear infinite;
 }
 
 //              keyframes

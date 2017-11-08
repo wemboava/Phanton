@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
 
 body {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    color: #585858;
-  //  overflow-x: hidden;
-    
-    margin: 0 auto;
-    padding: 0 2.5em;
-    max-width: 65em;
-
-    position: relative;
+  max-width: 65em;
+  overflow-x: hidden;
+  
+  margin: 0 auto;
+  padding: 0 2.5em;
+  
+  position: relative;
+  transition: opacity;
+  
+  color: #585858;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 #menu-ico {
