@@ -1,0 +1,118 @@
+.work {
+    width: 100%;
+
+    &__paragraph {
+        padding: 50px 0;
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    & .thumbnail {
+        
+        position: relative;
+        width: 32%;
+        margin: .8888% 0;
+        transition: transform 1s ease;
+
+        &:hover {
+            background-color: transparent;
+            transition: 1s;
+            transform: scale(1.1, 1.1);
+        }
+
+        &__image {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        &__header {
+            width: 100%;
+            height: 98.5%;
+
+            margin: 0 auto;
+            padding: 1em;
+            top: 0;
+            right: 0;
+            
+            align-items: center;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            text-align: center;
+            
+            color: white;   
+            cursor: pointer;
+
+            transition: background-color 1s ease; 
+
+            &:hover {
+                background-color: transparent;
+                transition: background-color 1s ease;
+                & .thumbnail__header__title {
+                    transform: translateY(0px);
+                }
+                & .thumbnail__header__paragraph {
+                    transform: scale(1, 1);
+                }
+
+            }
+
+            &__title {
+                font-size: 1.2em;
+                letter-spacing: 5px;
+                transform: translateY(15px);
+                transition: transform .5s ease;
+            }
+
+            &__paragraph {
+                transform: scale(0,0);
+            
+                transition: transform .7s ease;
+            }
+        }
+    }
+}
+
+.teste1 {
+    background: url("https://html5up.net/uploads/demos/astral/assets/css/images/overlay.png");
+    background-color: rgba(212, 111, 145, 0.692), 
+}
+.teste2 {
+    background-color: rgba(96, 178, 213, 0.61);
+}
+.teste3 {
+    background-color: rgba(97, 175, 163, 0.596);
+}
+.teste4 {
+    background-color: rgba(206, 115, 159, 0.644);
+}
+.teste5 {
+    background-color: rgba(181, 149, 202, 0.596);
+}
+.teste6 {
+    background-color: rgba(147, 169, 228, 0.582);
+}
+.teste7 {
+    background-color: rgba(126, 195, 224, 0.527);
+}
+.teste8 {
+    background-color: rgba(103, 175, 171, 0.493);
+}
+.teste9 {
+    background-color: rgba(214, 119, 144, 0.596);
+}
+.teste10 {
+    background-color: rgba(175, 132, 177, 0.521);
+}
+.teste11 {
+    background-color: rgba(109, 136, 195, 0.562);
+}
+.teste12 {
+    background-color: rgba(196, 110, 160, 0.493);
+}

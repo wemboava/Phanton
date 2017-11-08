@@ -97,7 +97,8 @@ path {
   color: white;
   padding: 2.75em;
   font-size: 1.4em;
-  transition: transform .7s ease; }
+  transition: transform .7s ease;
+  z-index: 2; }
   @media screen and (max-width: 1280px) {
     .menu {
       width: 360px;
@@ -127,22 +128,22 @@ path {
         padding: 1em 0;
         font-size: 0.8em; } }
 
-#menu-ico:checked ~ .overlay .menu {
+#menu-ico:checked ~ .menu {
   transform: translateX(calc(-500px)); }
 
-#menu-ico:checked ~ .overlay .menu .menu__list__item:nth-child(1) {
+#menu-ico:checked ~ .menu .menu__list__item:nth-child(1) {
   animation: delay-item .7s ease alternate 1 .2s forwards; }
 
-#menu-ico:checked ~ .overlay .menu .menu__list__item:nth-child(2) {
+#menu-ico:checked ~ .menu .menu__list__item:nth-child(2) {
   animation: delay-item .7s ease alternate 1 .4s forwards; }
 
-#menu-ico:checked ~ .overlay .menu .menu__list__item:nth-child(3) {
+#menu-ico:checked ~ .menu .menu__list__item:nth-child(3) {
   animation: delay-item .7s ease alternate 1 .6s forwards; }
 
-#menu-ico:checked ~ .overlay .menu .menu__list__item:nth-child(4) {
+#menu-ico:checked ~ .menu .menu__list__item:nth-child(4) {
   animation: delay-item .7s ease alternate 1 .8s forwards; }
 
-#menu-ico:checked ~ .overlay .menu .menu__list__item:nth-child(5) {
+#menu-ico:checked ~ .menu .menu__list__item:nth-child(5) {
   animation: delay-item .7s ease alternate 1 1s forwards; }
 
 @keyframes delay-item {
@@ -175,17 +176,107 @@ path {
   .header__icon__third {
     margin-bottom: 10px; }
 
-#menu-ico:checked ~ .overlay .header .header__icon .header__icon__second {
+#menu-ico:checked ~ .header .header__icon .header__icon__second {
   transform: translateX(-450px) scale(0, 0); }
 
-#menu-ico:checked ~ .overlay .header .header__icon .header__icon__first {
+#menu-ico:checked ~ .header .header__icon .header__icon__first {
   transform: rotate(135deg) scale(1.4, 1.1) translate(6px, -7px); }
 
-#menu-ico:checked ~ .overlay .header .header__icon .header__icon__third {
+#menu-ico:checked ~ .header .header__icon .header__icon__third {
   transform: rotate(45deg) scale(1.4, 1.1) translate(-4px, -7px); }
 
-#menu-ico:checked ~ .overlay .header .hexagon,
-#menu-ico:checked ~ .overlay .header .header__title {
+#menu-ico:checked ~ .header .hexagon,
+#menu-ico:checked ~ .header .header__title {
   opacity: .3; }
+
+.work {
+  width: 100%; }
+  .work__paragraph {
+    padding: 50px 0; }
+  .work__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .work .thumbnail {
+    position: relative;
+    width: 32%;
+    margin: .8888% 0;
+    transition: transform 1s ease; }
+    .work .thumbnail:hover {
+      background-color: transparent;
+      transition: 1s;
+      transform: scale(1.1, 1.1); }
+    .work .thumbnail__image {
+      width: 100%;
+      border-radius: 5px; }
+    .work .thumbnail__header {
+      width: 100%;
+      height: 98.5%;
+      margin: 0 auto;
+      padding: 1em;
+      top: 0;
+      right: 0;
+      align-items: center;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      transition: background-color 1s ease; }
+      .work .thumbnail__header:hover {
+        background-color: transparent;
+        transition: background-color 1s ease; }
+        .work .thumbnail__header:hover .thumbnail__header__title {
+          transform: translateY(0px); }
+        .work .thumbnail__header:hover .thumbnail__header__paragraph {
+          transform: scale(1, 1); }
+      .work .thumbnail__header__title {
+        font-size: 1.2em;
+        letter-spacing: 5px;
+        transform: translateY(15px);
+        transition: transform .5s ease; }
+      .work .thumbnail__header__paragraph {
+        transform: scale(0, 0);
+        transition: transform .7s ease; }
+
+.teste1 {
+  background: url("https://html5up.net/uploads/demos/astral/assets/css/images/overlay.png");
+  background-color: rgba(212, 111, 145, 0.692); }
+
+.teste2 {
+  background-color: rgba(96, 178, 213, 0.61); }
+
+.teste3 {
+  background-color: rgba(97, 175, 163, 0.596); }
+
+.teste4 {
+  background-color: rgba(206, 115, 159, 0.644); }
+
+.teste5 {
+  background-color: rgba(181, 149, 202, 0.596); }
+
+.teste6 {
+  background-color: rgba(147, 169, 228, 0.582); }
+
+.teste7 {
+  background-color: rgba(126, 195, 224, 0.527); }
+
+.teste8 {
+  background-color: rgba(103, 175, 171, 0.493); }
+
+.teste9 {
+  background-color: rgba(214, 119, 144, 0.596); }
+
+.teste10 {
+  background-color: rgba(175, 132, 177, 0.521); }
+
+.teste11 {
+  background-color: rgba(109, 136, 195, 0.562); }
+
+.teste12 {
+  background-color: rgba(196, 110, 160, 0.493); }
 
 /*# sourceMappingURL=app.css.map */

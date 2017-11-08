@@ -1,5 +1,4 @@
-#menu-ico:checked ~ .overlay .header .hexagon,
-#menu-ico:checked ~ .overlay .header .header__title,
-{
+#menu-ico:checked ~ .header .hexagon,
+#menu-ico:checked ~ .header .header__title {
     opacity: .3;
 }

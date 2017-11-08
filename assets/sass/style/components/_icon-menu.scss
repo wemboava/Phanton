@@ -40,15 +40,14 @@
   }
 }
 
-#menu-ico:checked ~ .overlay .header .header__icon .header__icon__second {
+#menu-ico:checked ~ .header .header__icon .header__icon__second {
   transform: translateX(-450px) scale(0 , 0); 
 }
 
-#menu-ico:checked ~ .overlay .header .header__icon .header__icon__first {
+#menu-ico:checked ~ .header .header__icon .header__icon__first {
   transform: rotate(135deg) scale(1.4, 1.1) translate(6px, -7px);
 }
 
-#menu-ico:checked ~ .overlay .header .header__icon .header__icon__third {
+#menu-ico:checked ~ .header .header__icon .header__icon__third {
   transform: rotate(45deg) scale(1.4, 1.1) translate(-4px, -7px); 
 }
-

@@ -9,6 +9,7 @@
     padding: 2.75em;
     font-size: 1.4em;   
     transition: transform .7s ease;
+    z-index: 2;
 
     @include mdscreen($screen-lg) {
         width: 360px;
@@ -53,11 +54,11 @@
     }
 }
 
-#menu-ico:checked ~ .overlay .menu{
+#menu-ico:checked ~ .menu{
     transform: translateX(calc(-500px));
 }
 
-#menu-ico:checked ~ .overlay .menu .menu__list__item {
+#menu-ico:checked ~ .menu .menu__list__item {
     &:nth-child(1){
         animation: delay-item .7s ease alternate 1 .2s forwards;
     }
