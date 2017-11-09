@@ -13,7 +13,7 @@ a {
   cursor: pointer; }
 
 html {
-  background: url(https://html5up.net/uploads/demos/astral/assets/css/images/overlay.png); }
+  background: url("/assets/images/overlay.png"); }
 
 body {
   max-width: 65em;
@@ -275,7 +275,6 @@ path {
         transition: transform .7s ease; }
 
 .teste1 {
-  background: url("https://html5up.net/uploads/demos/astral/assets/css/images/overlay.png");
   background-color: rgba(212, 111, 145, 0.692); }
 
 .teste2 {
