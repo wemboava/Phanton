@@ -7,6 +7,10 @@
   color: white;
 
   animation: move 1.5s ease-out alternate forwards;
+
+  @include mdscreen ($screen-xs) {
+    width: 100px;
+  }
 }
 
 #Layer_1 {
@@ -23,7 +27,9 @@
     }
   
     @include mdscreen($screen-sm) {
-      font-size: 2em;
+      font-size: 1.5em;
+      margin-top: 4em;
+      text-align: center;
     }
   }
 }

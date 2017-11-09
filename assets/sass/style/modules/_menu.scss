@@ -18,7 +18,7 @@
 
     @include mdscreen($screen-sm) {
         width: 260px;
-        padding: 1em;
+        padding: 2em 1em;
     }
 
     &__title {

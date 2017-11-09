@@ -12,6 +12,10 @@ body {
   
   color: #585858;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  
+  @media screen and (max-width: $screen-sm) {
+    padding: 0 1em;
+  }
 }
 
 #menu-ico {
