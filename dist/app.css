@@ -12,6 +12,9 @@ a {
   color: #fff;
   cursor: pointer; }
 
+html {
+  background: url(https://html5up.net/uploads/demos/astral/assets/css/images/overlay.png); }
+
 body {
   max-width: 65em;
   overflow-x: hidden;
