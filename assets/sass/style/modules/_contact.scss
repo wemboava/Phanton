@@ -1,0 +1,51 @@
+.contact {
+    width: 70%;
+    
+    padding-left: .8em;
+    
+    @include mdscreen($screen-md) {
+        width: 100%;
+    }
+    &__title {
+        font-size: 1.5em;
+        letter-spacing: 10px;
+    }
+
+    &__form {
+        padding: 1em 0 3em 0;    
+        &__group {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+
+            @include mdscreen($screen-sm) {
+                flex-direction: column;
+            }
+            
+            &  .input-form {
+                width: 100%;
+                &:focus {
+                    & + .input-name {
+                       transform: translateY(5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.input-group {
+    width: calc(50% - 10px);
+    
+    position: relative;
+    
+    @include mdscreen($screen-sm) {
+        width: 100%;
+
+        margin: 1em 0;
+    }
+    &__message {
+        width: 100%;
+    }
+}

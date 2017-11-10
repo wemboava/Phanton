@@ -1,0 +1,26 @@
+.copyright {
+    
+    &__list {
+        padding: 5em 0;
+
+        display: flex;
+        justify-content: center;
+        
+        color: rgb(184, 184, 184);
+        font-size: 0.8em;
+    }
+    &__item:nth-child(2), &__item:nth-child(3) {
+        padding: 0 0 0 1em;
+        margin: 0 0 0 1em;
+        
+        border-left: solid 1px rgba(196, 196, 196, 0.712);
+        box-shadow: -1px 0px 0px 0px rgba(110, 102, 102, 0.351);
+    }
+}
+.text-link {
+    color: rgba(196, 196, 196, 0.712);
+    &:hover {
+        color: $color-default;
+        transition: .7s;
+    }
+}

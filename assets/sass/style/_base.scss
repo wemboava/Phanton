@@ -5,17 +5,17 @@ html {
 }
 
 body {
-  max-width: 65em;
-  overflow-x: hidden;
+  max-width: 80em;
   
   margin: 0 auto;
   padding: 0 2.5em;
   
   position: relative;
-  transition: opacity;
   
   color: #585858;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
+  transition: opacity;
+  overflow-x: hidden;
   
   @media screen and (max-width: $screen-sm) {
     padding: 0 1em;
@@ -26,5 +26,14 @@ body {
   display: none;
 }
 
-.container {
+.link-header {
+  border-bottom: dashed 1px;
+  border-color: #ccc;
+  cursor: pointer;
+
+  &:hover {
+    border: transparent;
+    color: $color-default;
+    transition: .6s;
+  }
 }

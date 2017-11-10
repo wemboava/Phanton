@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: transform 1s ease;
   background-color: black; 
+  transition: background-color .7s, transform 1s ease; 
 }
 
 .header__icon {
@@ -24,7 +25,14 @@
 
   color: black;
   background-color: rgba(255, 255, 255, 0.075);
-  
+
+  &:hover {
+
+    .icon {
+      background-color: $color-default;
+    }
+  }
+
   cursor: pointer;
 
   @include mdscreen($screen-sm) {

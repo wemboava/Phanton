@@ -13,6 +13,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-bottom: 70px;
     }
 
     & .thumbnail {
@@ -74,7 +75,6 @@
                 & .thumbnail__header__paragraph {
                     transform: scale(1, 1);
                 }
-
             }
 
             &__title {

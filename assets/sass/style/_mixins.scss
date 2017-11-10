@@ -1,3 +1,29 @@
 @mixin mdscreen($size, $var: max-width) {
     @media screen and (#{$var} : #{$size}) {@content;}
 }
+
+@mixin icons($color, $size: 1.6em) {
+    width: 55px;
+    height: 55px;
+    
+    margin: 12px;
+    padding: .6em .8em .8em .6em;
+    
+    border: solid 1px $color;
+    border-radius: 5px;
+    color: $color;
+    font-size: $size;
+    
+    @include mdscreen($screen-sm) {
+        width: 45px;
+        height: 45px;
+    
+        padding: .4em .6em .6em .4em;        
+    }
+    
+    &:hover {
+        background-color: $color;
+        color: white;
+        transition: .4s;
+    }
+}

@@ -12,8 +12,13 @@
 //=================================================
 @import "style/modules/header.scss";
 @import "style/modules/menu.scss";
+@import "style/modules/contact.scss";
+@import "style/modules/link.scss";
 //Components
 //=================================================
+@import "style/components/input-form.scss";
+@import "style/components/button.scss";
 @import "style/components/icon-menu.scss";
 @import "style/components/overlay.scss";
 @import "style/components/thumbnail.scss";
+@import "style/components/copyright.scss";

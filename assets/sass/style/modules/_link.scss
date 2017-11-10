@@ -1,0 +1,56 @@
+.link {
+    width: 27%;
+
+    @include mdscreen($screen-md) {
+        width: 100%;
+    
+        margin-bottom: 2em;
+    }
+    &__header {
+        padding-left: 12px;
+        margin-bottom: calc(55px - .8em);
+    
+        letter-spacing: 10px;
+        font-size: 1.5em;
+    }
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.fa-twitter {
+    @include icons(#1997F0);
+}
+.fa-facebook {
+    @include icons(#334F8D);
+    padding: .6em .7em .6em .7em;
+}
+.fa-instagram {
+    @include icons(#F36336);
+}
+.fa-dribbble {
+    @include icons(#E7427E);
+}
+.fa-github {
+    @include icons(#000);
+}
+.fa-stack-overflow {
+    @include icons(#F37420);
+}
+.fa-phone {
+    @include icons(rgb(60, 64, 66));
+}
+.fa-envelope {
+    @include icons(rgb(240, 183, 25));
+    padding: .5em .8em .8em .5em;
+}
+
+.testexablau {
+    display: flex;
+    justify-content: space-between;
+
+    @include mdscreen($screen-md) {
+        flex-direction: column-reverse;
+    }    
+}
