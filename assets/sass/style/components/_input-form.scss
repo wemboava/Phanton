@@ -37,7 +37,7 @@
     }
 }
 .input-form {
-    &:focus {
+    &:focus, .input-form:valid {
         & + .test-bottom {
             width: 100%;
             & + .input-name {
@@ -47,6 +47,16 @@
             & + .input-message {
                 transform: translateY(-65px);
             }
+        }
+    }
+}
+.input-form:valid {
+    & + .test-bottom {
+        & + .input-name {
+            transform: translateY(-45px);
+        }
+        & + .input-message {
+            transform: translateY(-65px);
         }
     }
 }
