@@ -412,18 +412,12 @@ path {
   .test-bottom__message {
     margin-top: -5px; }
 
-.input-form:focus + .test-bottom, .input-form .input-form:valid + .test-bottom {
+.input-form:focus + .test-bottom, .input-form:valid + .test-bottom {
   width: 100%; }
-  .input-form:focus + .test-bottom + .input-name, .input-form .input-form:valid + .test-bottom + .input-name {
+  .input-form:focus + .test-bottom + .input-name, .input-form:valid + .test-bottom + .input-name {
     transform: translateY(-45px); }
-  .input-form:focus + .test-bottom + .input-message, .input-form .input-form:valid + .test-bottom + .input-message {
+  .input-form:focus + .test-bottom + .input-message, .input-form:valid + .test-bottom + .input-message {
     transform: translateY(-65px); }
-
-.input-form:valid + .test-bottom + .input-name {
-  transform: translateY(-45px); }
-
-.input-form:valid + .test-bottom + .input-message {
-  transform: translateY(-65px); }
 
 .button {
   padding: 1em 1.5em;
