@@ -1,0 +1,31 @@
+.messagejs {
+    width: 100%;
+
+    padding: .5em;
+    position: relative;
+    display: none;
+
+    background-color: rgba(240, 120, 148, 0.2);
+    box-shadow: inset 0px -1px 3px #864848, 2px 4px 20px 0px #ffb0b0;
+    color: red;
+    
+    &--area {
+        margin-top: -5px;
+    }
+    &--success {
+        width: 203px;
+    
+        padding: 1em;
+        margin-left: 1em;
+        display: none;
+    
+        background-color: rgba(0, 255, 98, 0.123);
+        color: rgb(45, 116, 37);     
+        
+        box-shadow: inset 0px -1px 3px #2e4926, 2px 4px 20px 0px #d0ffb0;
+    }
+}
+
+.add-error {
+    display: inline-block;
+}

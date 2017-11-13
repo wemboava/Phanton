@@ -375,17 +375,17 @@ path {
     color: white;
     transition: .4s; }
 
-.testexablau {
+.social {
   display: flex;
   justify-content: space-between; }
   @media screen and (max-width: 980px) {
-    .testexablau {
+    .social {
       flex-direction: column-reverse; } }
 
 .input-form {
   width: 100%;
   padding: 0;
-  margin-top: 2em;
+  margin-top: 3.5em;
   background-color: transparent;
   border: none;
   border-bottom: solid 1px #ddd;
@@ -393,6 +393,9 @@ path {
   font-size: 1em;
   resize: none;
   transition: width 1s ease; }
+  @media screen and (max-width: 768px) {
+    .input-form {
+      margin-top: 2em; } }
 
 .input-name {
   position: absolute;
@@ -401,7 +404,8 @@ path {
 
 .input-message {
   position: absolute;
-  transform: translateY(-35px);
+  margin-top: 2em;
+  transform: translateY(-65px);
   transition: transform 1s ease; }
 
 .test-bottom {
@@ -417,12 +421,13 @@ path {
   .input-form:focus + .test-bottom + .input-name, .input-form:valid + .test-bottom + .input-name {
     transform: translateY(-45px); }
   .input-form:focus + .test-bottom + .input-message, .input-form:valid + .test-bottom + .input-message {
-    transform: translateY(-65px); }
+    transform: translateY(-95px); }
 
 .button {
   padding: 1em 1.5em;
   background-color: #4E4E4E;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: white; }
   .button:hover {
     background-color: #f2849e;
     transition: .6s; }
@@ -477,7 +482,7 @@ path {
 #menu-ico:checked ~ .header .hexagon,
 #menu-ico:checked ~ .header .header__title,
 #menu-ico:checked ~ .work,
-#menu-ico:checked ~ .testexablau {
+#menu-ico:checked ~ .social {
   opacity: .3;
   pointer-events: none; }
 
@@ -600,5 +605,27 @@ path {
   .text-link:hover {
     color: #f2849e;
     transition: .7s; }
+
+.messagejs {
+  width: 100%;
+  padding: .5em;
+  position: relative;
+  display: none;
+  background-color: rgba(240, 120, 148, 0.2);
+  box-shadow: inset 0px -1px 3px #864848, 2px 4px 20px 0px #ffb0b0;
+  color: red; }
+  .messagejs--area {
+    margin-top: -5px; }
+  .messagejs--success {
+    width: 203px;
+    padding: 1em;
+    margin-left: 1em;
+    display: none;
+    background-color: rgba(0, 255, 98, 0.123);
+    color: #2d7425;
+    box-shadow: inset 0px -1px 3px #2e4926, 2px 4px 20px 0px #d0ffb0; }
+
+.add-error {
+  display: inline-block; }
 
 /*# sourceMappingURL=app.css.map */

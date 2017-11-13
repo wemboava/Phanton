@@ -2,7 +2,7 @@
     width: 100%;
     
     padding: 0;
-    margin-top: 2em;
+    margin-top: 3.5em;
 
     background-color: transparent;
     border: none;
@@ -12,6 +12,10 @@
     resize: none;
 
     transition: width 1s ease;
+
+    @include mdscreen($screen-sm) {
+        margin-top: 2em;
+    }
 }
 .input-name {
     position: absolute;
@@ -21,8 +25,8 @@
 }
 .input-message {
     position: absolute;
-    
-    transform: translateY(-35px);
+    margin-top: 2em;
+    transform: translateY(-65px);
     transition: transform 1s ease;
 }
 .test-bottom {
@@ -45,7 +49,7 @@
             }
 
             & + .input-message {
-                transform: translateY(-65px);
+                transform: translateY(-95px);
             }
         }
     }
