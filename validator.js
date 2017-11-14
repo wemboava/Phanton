@@ -1,3 +1,11 @@
+function handle() {
+    var keycode = window.event.keyCode;
+    if (keycode == 13) {
+        validate();
+    }
+}
+
+
 let rules = {
     name: 'required',
     email: 'required|email', 
@@ -25,6 +33,7 @@ function validate() {
     
     if(validation.passes() == true) {
         document.querySelector('button ~ .messagejs--success').classList.add('add-error');
+        // document.querySelector('form').submit();
     }
     
     if(validation.errors.first('name')) {
@@ -41,4 +50,5 @@ function validate() {
         document.querySelector('#input ~ .messagejs').classList.add('add-error');
         document.querySelector('#input ~ .messagejs').innerHTML = validation.errors.first('message');
     }
+
 }

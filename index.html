@@ -142,8 +142,8 @@
 
                 <h5 class="contact__title">GET IN TOUCH</h5>
                 
-                <div class="contact__form">  
-                    
+                <form action="#" class="contact__form">
+        
                     <div class="contact__form__group">
                         <div class=" input-group">
                             <input id="input2" class="input-form" type="text" required value"willian">
@@ -152,7 +152,7 @@
                             <span class="messagejs"></span>
                         </div>
                         <div class=" input-group">
-                            <input id="input3" class="input-form" type="text" required value"willian@gmail.com">
+                            <input id="input3" class="input-form" type="text" required value"willian@gmail.com"  onkeypress="handle()">
                             <span class="test-bottom"></span>
                             <label class="input-name" for="input3">Email</label>
                             <span class="messagejs"></span>
@@ -160,13 +160,12 @@
                     </div>
                 
                     <div class="input-group input-group__message">
-                        <textarea id="input" class="input-form contact__form__message" id="" cols="30" rows="2" required value"mensagen de teste"></textarea>
+                        <textarea id="input" class="input-form contact__form__message" cols="30" rows="2" required value"mensagen de teste"></textarea>
                         <span class="test-bottom test-bottom__message"></span>
                         <label class="input-message" for="input">Message</label>
                         <span class="messagejs messagejs--area"></span>
                     </div>
-
-                </div>
+                </form>
                 <button class="button" href="#" onclick="validate()">SEND</button>  
                 <span class="messagejs--success">Message sent successfully!</span>
             </div>
