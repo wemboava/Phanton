@@ -400,10 +400,16 @@ path {
 .input-name {
   position: absolute;
   transform: translateY(-25px);
+  bottom: -20px;
+  left: 0;
+  cursor: auto;
   transition: transform 1s ease; }
 
 .input-message {
   position: absolute;
+  bottom: -50px;
+  left: 0;
+  cursor: auto;
   margin-top: 2em;
   transform: translateY(-65px);
   transition: transform 1s ease; }
@@ -411,6 +417,8 @@ path {
 .test-bottom {
   width: 0;
   position: absolute;
+  bottom: 0;
+  left: 0;
   border-top: solid 2px #f2849e;
   transition: width 1s ease; }
   .test-bottom__message {

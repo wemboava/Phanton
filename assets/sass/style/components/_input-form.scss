@@ -19,7 +19,8 @@
 }
 .input-name {
     position: absolute;
-    
+    bottom: -20px;
+    left: 0;
     transform: translateY(-25px);
     transition: transform 1s ease;
 }
@@ -33,7 +34,9 @@
     width: 0;
     
     position: absolute;
-    
+    bottom: 0px;
+    left: 0;
+
     border-top: solid 2px $color-default;
     transition: width 1s ease;
     &__message {
